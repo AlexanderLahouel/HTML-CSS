@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --color-dark: #0B0F19; 
+    --color-primary: #6366F1; 
+    --color-gray1: #F3F6FF;
+    --color-gray2: #EFF2FC;
+    --color-gray3: #E2E5F1;
+    --color-gray4: #D4D7E5;
+    --color-gray5: #B4B7C9;
+    --color-gray6: #9397AD;
+    --color-gray7: #565973;
+    --color-gray8: #33354D;
+    --color-white: #FFFFFF; 
+    --color-yellow: #FFBA08;
+    --color-red: #EF4444;
+    --color-green: #22C55E;
+    --color-blue: #4C82F7;
+
+    --container-padding: 1rem;
+    --trasition-time: all 0.2s;
+}
+*{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+}
+
+body, section, div, header, footer, main, aside, nav, blockquote, p, span {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+a{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.btn-primary:hover  {
+    background-color: var(--color-gray6);
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+.btn-primary i {
+    margin-right: 0.5rem;
+}
+
+.btn-mobile {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
