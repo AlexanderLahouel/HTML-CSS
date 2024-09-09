@@ -181,6 +181,105 @@ header .container {
     padding-bottom: 1rem;
 }
 
+.title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: -0.5rem;
+    
+}
+
+ #text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color:var(--color-gray7)
+    
+}
+#mainpage {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+ .btn-store {
+    background-color: #0B0F19;
+    text-align: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 1rem;
+   
+    
+    
+ }
+
+ 
+ .btn-play {
+    background-color: #0B0F19;
+    text-align: center;
+    justify-content: center;
+    border-radius: 8px;
+    
+ }
+
+main .container {
+    position:relative;
+    height: 366px;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+#appstore {
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+#googleplay {
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+#arrow {
+display: grid;
+grid-template-columns: auto auto;
+align-items: center;
+grid-gap: 2rem;
+place-items: center;
+margin-left: 7rem;
+margin-right: 7rem;
+margin-top: -7rem;
+
+}
+
+#discover {
+    text-align: center;
+    white-space: nowrap;
+    color: var(--color-gray6);
+    font-size: 14px;
+    
+}
+.circle {
+    width: 44px;  
+    height: 44px; 
+    border-radius: 50%; 
+   background-color: var(--color-white);
+   
+    
+}
+
+
+ 
+
+
 footer {
     font-size: 14px;
     padding-top: 1rem;
