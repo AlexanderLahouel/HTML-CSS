@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Silicon</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
     <title>Silicon</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
                 <a id="logo" href="index.html"><img src="images/logo.svg" alt="Silicon Logotype"> </a>
     
                 <nav id="main-menu" class="navbar">
-                    <a href="#">Features</a>
+                    <a id="Features" href="#">Features</a>
                 </nav>
                 <div id="darkmode-toggle-switch" class="btn-toggle-switch">
                     <span class="label">Dark mode</span>
@@ -40,42 +41,35 @@
         </header>
 
         <main>
+            <section id="hero">
             <div id="mainpage" class="container">
-                <h1 class = title>
-                    Manage All Your Money in One App
-                    
-                </h1>
-                <p id="text">
-                    We offer you a new generation of the mobile
-                    banking. Save, spend & manage money in your pocket.
-                </p>
-                <div id="appstore" href="#" class="btn-store">
-                    <img id="apple" src="images/appstore-light.svg" alt="download appstore"> 
-                    <div class="text-container">
-                        <span class="download-text">Download on the</span><br>
-                        <span class="app-store-text">App Store</span>
-                    </div>
-               
-    
+                
+                <div class = headline>
+                    <h1>Manage All Your<br> Money in One App </h1>
                 </div>
-                <div id="googleplay" href="#" class="btn-play">
-                    <img src="images/googleplay-light.svg" alt="download googleplay"> 
-                    <div class="text-container">
-                        <span class="getit-text">GET IT ON</span><br>
-                        <span class="gp-text">Google Play</span>
-                   </div>
-                    
-                </div>
-                <div class="circle">
-                    <a id="arrow" class="container">
-                        <img href="index.html" imc src="images/arrow.svg" alt="discover more arrow">
-                        <p id="discover">Discover more</p>
-                    </a>
-                    
+                <div class="content">
+                <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+                <div class = "buttons">
+                    <a class="btn-download-app" href ="#"><img src ="images/appstore-light.svg" alt="appstore"> </a>
+                    <a class="btn-download-app" href=""><img src ="images/googleplay-light.svg" alt="google play"> </a>
+                 </div>
+                 <a href="#" class="discover-more">
+                    <span class="btn-circle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                    <span>Discover more</span>
 
-                </div>
-                <img id="phones" src="images/phones.svg" alt="iphones">
+                 </a>
+            
             </div>
+            <div class="images">
+                <img class="img-back" src="images/iphone-mybudget.svg" alt="iphone-mybudget">
+                <img class="img-front" src="images/iphone-yourcards.svg" alt="iphone-yourcards">
+            </div>
+                
+             
+                 
+        </section>
            
             
         </main>
