@@ -381,6 +381,23 @@ footer {
      
 }
 
+#brands {
+    display: none;
+    margin-top: 3rem;
+}
+
+.brand-box {
+    border: 1px solid var(--color-gray3);
+    border-radius: 8px;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -396,6 +413,19 @@ footer {
         display: flex;
         flex-direction:row;
 
+    }
+    #brands {
+        display: block;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+    #brand-5, #brand-6 {
+        display: none;
     }
    
 }
@@ -430,6 +460,12 @@ footer {
     }
     #Features {
         color: var(--color-gray8);
+    }
+    #brands {
+        display: block;
+    }
+    #brand-5, #brand-6 {
+        display: flex;
     }
     
     
