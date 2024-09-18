@@ -266,11 +266,13 @@ footer {
 
          @media (min-width: 768px) {
             font-size: 44px;
+            padding: 20px;
          }
          @media (min-width: 1300px) {
             font-size: 56px;
             text-align: left;
-            margin-top: 6rem;
+            margin-top: 9rem;
+            padding: 0;
          }
      }
 
@@ -322,9 +324,11 @@ footer {
             @media(min-width: 768px) {
                 justify-content: flex-start;
                 margin-bottom: 2rem;
+                padding: 10px;
             }
             @media (min-width: 1400px) {
                margin-top: 12rem;
+               padding: 20px;
              }
         }
 
@@ -643,6 +647,7 @@ footer {
     }
     .btn-toggle-switch .label{
         display: block;
+        margin-right: 0.75rem;
     }
     
     header .container{
@@ -758,6 +763,7 @@ footer {
 
     @media (min-width: 1400px) {
         display: block;
+        padding-bottom: 5rem;
     }
 }
 
@@ -799,4 +805,133 @@ footer {
             margin-left: 6rem;
         }
     }
+}
+
+.transfer-money {
+    display: none;
+
+    @media (min-width: 1400px) {
+        display: block;
+    }
+}
+.transfer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+    padding-top: 7rem;
+}
+.transfer-item {
+    display: flex;
+    align-items: center;
+    justify-items: left;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+}
+#send, #contacts {
+    margin-right: -2rem;
+    margin-top: -3.5rem;
+}
+.transfer-item h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--color-dark);
+    
+}
+#Receive {
+    margin-right: 6.5rem;
+}
+.transfer-item p {
+    font-size: 16px;
+    color:var(--color-gray7);
+    width: 245px;
+}
+ul {
+    list-style: none;
+    place-content: left;
+    margin-right: 6rem;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color:var(--color-gray7);
+    gap: 0.5rem;
+  }
+  #learn-more {
+    margin-top: 1rem;
+    margin-right: 240px;
+  }
+  #learn-more2 {
+    margin-top: 3rem;
+    margin-right: 350px;
+  }
+  #sidearrow {
+    margin-left: 0.75rem;
+  }
+  .grid-icons {
+    display: flex;
+    gap: 20px;
+  }
+  .grid-icons p{
+    margin-top: 1rem;
+  }
+.reviews {
+    display: none;
+
+    @media(min-width: 1400px) {
+        display: block;
+        background-color: var(--color-gray1);
+        padding: 80px;
+    }
+}
+.reviews h2 {
+    font-size: 40px;
+    font-weight: 800px;
+}
+.review-grid {
+    display: flex;
+    gap: 24px;
+   
+}
+.review-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: var(--color-white);
+    width: 416px;
+    height: 350px;
+    padding: 20px;
+    gap: 2px;
+    margin-left: 3rem;
+}
+#box-1 {
+    margin-left: 6rem;
+}
+#box-2 {
+    margin-left: 0;
+}
+#quotes {
+    margin-top: -3rem;
+    margin-right: 310px;
+}
+#stars {
+    margin-right: 280px;
+    margin-top: 1rem;
+}
+.review-box p {
+    color:var(--color-gray7);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 1rem;
+    margin-bottom: -0.5rem;
+    width: 368px;
+    height: 145px;
+}
+#person {
+    margin-top: 2.5rem;
+    margin-right: 7rem;
 }
