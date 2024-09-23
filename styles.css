@@ -17,6 +17,16 @@
     --color-green: #22C55E;
     --color-blue: #4C82F7;
 
+
+    --color-bg: var(--color-white);
+    --color-bg-100: var(--color-gray1);
+    --color-text-body: var(--color-gray7);
+    --color-text-heading:var(--color-dark);
+    --color-text-navigation: var(--color-gray8);
+    --color-market-btn: var(--color-dark);
+    --color-lg: var(--color-gray6);
+
+
     --container-padding: 1rem;
     --trasition-time: all 0.2s;
 }
@@ -31,11 +41,17 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
     padding: 0;
 }
 body {
-    font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  background-color: var(--color-bg);
+  color: var(--color-text-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-dark);
 }
 
 .wrapper {
@@ -210,11 +226,13 @@ header .container {
 }
 
 
+
+
 footer {
     font-size: 14px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: var(--color-gray6);
+    color: var(--color-lg);
 
     .container {
         display:flex;
@@ -286,7 +304,7 @@ footer {
         p {
             font-size: 18px;
             margin-bottom: 3rem;
-            color: var(--color-gray7);
+            color: var(--color-text-body);
 
             @media (min-width:1400px) {
                 margin-top: -3rem;
@@ -302,8 +320,8 @@ footer {
             gap: 1rem;
 
             @media (min-width:768px) {
-                width: 280px;
-                height: auto;
+                width: 280px;    /* Valde att behålla knapparna så som du gjorde i din video, tyckte också det ser mycket bättre ut.*/
+                height: auto;          
             }
 
             @media (min-width: 1300px) {
@@ -314,7 +332,7 @@ footer {
 
         }
         .discover-more {
-            color: var(--color-gray7);
+            color: var(--color-text-body);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -399,6 +417,7 @@ footer {
     justify-content: center;
     align-items: center;
 
+
 }
 
 .app-features {
@@ -465,14 +484,14 @@ footer {
     font-weight: 400;
     font-size: 18px;
     line-height: 29px; 
-    color: var(--color-gray7);
+    color: var(--color-text-body);
 
 
 
     @media (min-width: 1400px) {
         text-align: left;
         line-height: 26px;
-        color: var(--color-gray6);
+        color: var(--color-lg);
         margin-left: -135px;
         width: 746px;
     }
@@ -568,7 +587,7 @@ footer {
   }
   
   .text p {
-    color: var(--color-gray7);
+    color: var(--color-text-body);
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -606,7 +625,6 @@ footer {
     }
 }
     
-
 
 @media (min-width: 768px) {
     .container {
@@ -648,6 +666,8 @@ footer {
     .btn-toggle-switch .label{
         display: block;
         margin-right: 0.75rem;
+        color: var(--color-text-navigation);
+        font-weight: 600;
     }
     
     header .container{
@@ -683,13 +703,12 @@ footer {
 }
 
 .how-it-works {
-    background-color: var(--color-gray1);
+    background-color: var(--color-bg-100);
    
 }
 .how-it-works h2 {
     font-size: 28px;
     font-weight: 800;
-    color: var(--color-dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -745,7 +764,7 @@ footer {
 }
 
 .how-it-works p {
-    color:var(--color-gray7);
+    color:var(--color-text-body);
     font-size: 16px;
     padding-bottom: 4rem;
     line-height: 25.6px;
@@ -836,7 +855,6 @@ footer {
 .transfer-item h2 {
     font-size: 32px;
     font-weight: 800;
-    color: var(--color-dark);
     
 }
 #Receive {
@@ -844,7 +862,7 @@ footer {
 }
 .transfer-item p {
     font-size: 16px;
-    color:var(--color-gray7);
+    color:var(--color-text-body);
     width: 245px;
 }
 ul {
@@ -856,7 +874,7 @@ ul li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    color:var(--color-gray7);
+    color:var(--color-text-body);
     gap: 0.5rem;
   }
   #learn-more {
@@ -882,7 +900,7 @@ ul li {
 
     @media(min-width: 1400px) {
         display: block;
-        background-color: var(--color-gray1);
+        background-color: var(--color-bg-100);
         padding: 80px;
     }
 }
@@ -922,7 +940,7 @@ ul li {
     margin-top: 1rem;
 }
 .review-box p {
-    color:var(--color-gray7);
+    color:var(--color-text-body);
     font-size: 18px;
     font-weight: 400;
     line-height: 160%;
@@ -934,4 +952,400 @@ ul li {
 #person {
     margin-top: 2.5rem;
     margin-right: 7rem;
+}
+
+
+
+#faq {
+    overflow: hidden;
+    
+    h2 {
+        font-size: 25px;
+        font-weight: 800;
+        margin-top: 2.5rem;
+
+        @media (min-width:768px) {
+            font-size: 32px;
+            margin-top: 3rem;
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-text-body);
+        margin-bottom: 3rem;
+    }
+}
+    .faq-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+   #faq .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+   }
+   #desktop {
+    display: none;
+   }
+
+    .faq-grid {
+        display: flex;
+        flex-direction: column;
+    
+    }
+        .faq-item {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-gray1);
+            padding: 12px;
+            margin-left: 0.25rem;
+            
+           
+        }
+        
+        #faq-question-mobile {
+            border-bottom: 1px solid var(--color-gray1);
+            border-radius: 8px 8px 0 0;
+        }
+        #last-item {
+            border-radius: 0 0 8px 8px;
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            
+        }
+        .faq-answer {
+            border-top: 2px solid var(--color-gray1);
+            padding-top: 1rem;
+            padding-left: 8px;
+
+        }
+       
+       
+      
+       
+       
+        
+        #first-question {
+            display: none;
+
+            @media(min-width: 768px) {
+                display: block;
+            }
+        }
+        #answer-tablet {
+            display: none;
+        }
+       
+
+        #faq-question-tablet {
+            display: none;
+            @media(min-width: 768px) {
+                display: block;
+                gap: 0;
+                
+            }
+        }
+     @media(min-width:768px) {
+        #faq-question-mobile {
+            display: none;
+        }
+       
+        #answer-tablet {
+            display: block;
+            border: none;
+            p{
+                border-top: none;
+                margin-top: -1rem;
+                font-size: 14px;
+                
+            }
+           
+            
+        }
+       
+        .faq-grid {
+            gap: 1rem;
+        }
+        .faq-item {
+            border-radius: 8px;
+        }
+        #last-item {
+            border-radius: 8px;
+        }
+        #desktop, #desktop2 {
+            display: block;
+        }
+        #mobile, #mobile2 {
+            display: none;
+        }
+        #question2 {
+            display: none;
+        }
+        .faq-question {
+            margin-left: 0.5rem;
+          }
+       
+     }
+     @media (min-width:1400px) {
+       #faq .container {
+        grid-template-columns: 1fr 2fr;
+        gap: 100px;
+        padding-top: 4rem;
+       }
+       .faq-grid {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        margin-top: 3rem;
+        
+        
+       }
+        .faq-item {
+            grid-column: 2;
+            margin-left: 1rem;
+            
+            
+            
+        }
+        .contact-options {
+            grid-row: 2;
+            grid-column: 1;
+            margin-bottom: 20rem;
+            }
+        
+        
+        .faq-header {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: left;
+            width: 415px;
+            margin-top: 1rem;
+            margin-bottom: -9rem;
+        }
+        h2 {
+            margin-bottom: 2rem;
+        }
+        
+     }
+
+     #green {
+    color: var(--color-green);
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    height: 50px;
+    
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+}
+.contact-options {
+    display: none;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: space-between;
+
+    @media(min-width: 768px) {
+        display: flex;
+    }
+
+   
+}
+.contact-card {
+    padding: 24px;
+    border: 1px solid var(--color-gray3);
+    border-radius: 8px;
+    align-items:center;
+    width: 343px;
+   
+    
+
+    @media (min-width:1400px) {
+        width: 196px;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    
+
+}
+.contact-card a {
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+}
+.contact-card h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color:var(--color-text-body);
+    
+    @media (min-width:1400px) {
+     text-align: left;
+     font-size: 14px;
+     line-height: 160%;
+     width: 185px;
+     
+    }
+}
+.faq-icon {
+    
+    
+    @media (min-width:1400px) {
+        
+        
+    }
+}
+
+#subscribe 
+    
+.subscribe-container {
+    background-color: var(--color-bg-100);
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.subscribe-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+.subscribe-header h2 {
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 30px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.form-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--color-gray3);
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    flex-grow: 1;
+    min-width: 200px;
+    padding-left: 3rem;
+}
+.email {
+    padding-left: 3rem;
+    background-image: url(images/email.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+}
+
+
+.subscribe-input::placeholder {
+    color: var(--color-lg);
+}
+
+.subscribe-button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 11px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+#desktop2 {
+    display: none;
+
+    @media (min-width:1400px) {
+        #mobile2 {
+            display: none;
+        }
+        #desktop2 {
+            display: block;
+        }
+    }
+}
+@media (min-width:768px) {
+    
+    .subscribe-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+    }
+    .subscribe-header {
+        margin-bottom: 0;
+        gap: 32px;
+        margin-left: 1rem;
+    }
+    .subscribe-header h2 {
+        width: 200px;
+        font-size: 23px;
+        line-height: 32px;
+    }
+   .subscribe-form {
+    justify-content: flex-end;
+    width: 212px;
+    margin-right: 1rem;
+    
+   }
+   
+    .subscribe-input {
+        flex-grow: 1;
+        width: 212px;
+    }
+    .subscribe-button {
+        width: 115px;
+    }
+    
+    #mobile2 {
+        display: block;
+        
+    }
+
+    @media (min-width:1400px) {
+       
+        .subscribe-container {
+            height: 222px;
+            margin-bottom: 3rem;
+        }
+        .subscribe-header {
+            gap: 32px;
+            margin-left: 2rem;
+        }
+        #mobile2 {
+            display: none;
+        }
+        #desktop2 {
+            display: block;
+            width: 414px;
+        }
+
+        .subscribe-form {
+            width: 45%;
+            margin-right: 4rem;
+        }
+        h2{
+            font-size: 24px;
+            margin-left: 2rem;
+        }
+    }
 }
