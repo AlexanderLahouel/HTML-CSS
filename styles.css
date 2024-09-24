@@ -25,6 +25,9 @@
     --color-text-navigation: var(--color-gray8);
     --color-market-btn: var(--color-dark);
     --color-lg: var(--color-gray6);
+    --color-white-to-gray: var(--color-white);
+    --color-logo-bg: var(--color-gray1);
+    --color-box: var(--color-white);
 
 
     --container-padding: 1rem;
@@ -40,6 +43,74 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
     margin: 0;
     padding: 0;
 }
+
+html {
+    color-scheme: light;
+}
+.dark {
+    color-scheme: dark;
+
+    --color-bg: var(--color-dark);
+    --color-bg-100: rgba(255, 255, 255, 0.04);
+    --color-text-body: rgba(255, 255, 255, 0.7);
+    --color-text-heading:var(--color-white);
+    --color-text-navigation: var(--color-white);
+    --color-market-btn: var(--color-white);
+    --color-white-to-gray: rgba(255, 255, 255, 0.05);
+    --color-logo-bg: rgba(99, 101, 241, 0.08);
+    --color-box: rgba(255, 255, 255, 0.04);
+
+    .btn-circle {
+        border: none;
+    }
+    .brand-box {
+        border: 1px solid var(--color-gray8);
+    }
+    .faq-item {
+        border: none;
+    }
+    #faq-question-tablet {
+        border: 1px solid rgba(255, 255, 255, 0.15)
+    }
+    .contact-card{
+        border:1px solid var(--color-gray8);
+    }
+    .form-input {
+        border: 1px solid var(--color-gray8);
+    }
+    #faq-question-mobile {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    #features {
+        color: var(--color-white);
+    }
+    .discover-more i {
+        color: white;
+     }
+     .faq-answer {
+        border-top: 1px solid var(--color-gray8);
+    }
+    .form-input {
+        color: var(--color-gray5);
+
+        @media (min-width:1400px) {
+            background-color: var(--color-dark);
+            color: var(--color-gray6);
+        }
+    }
+    
+   
+   
+    
+
+    .show-light {display: none;}
+
+    .show-dark {display: block;}
+
+}
+.show-light {display: block;}
+.show-dark {display: none;}
+
 body {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -51,14 +122,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-dark);
+    color: var(--color-text-heading);
 }
 
-.wrapper {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-}
 
 .container {
     width: 100%;
@@ -96,9 +162,12 @@ a:hover{
 .btn-primary i {
     margin-right: 0.5rem;
 }
+header {
+    background-color: rgba(255, 255, 255, 0.065);
+}
 
 .btn-download-app {
-    background-color: var(--color-dark);
+    background-color: var(--color-market-btn);
     color: var(--color-white);
     border-radius: 8px;
     padding: 12px 25px;
@@ -106,6 +175,8 @@ a:hover{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+   
+    
 }
 .btn-download-app:hover  {
     background-color: var(--color-primary);
@@ -146,7 +217,7 @@ a:hover{
     align-items: center;
     border-radius: 50%;
     border: 1px solid var(--color-gray2);
-    background-color: var(--color-white);
+    background-color: var(--color-white-to-gray);
     color: var(--color-gray8);
 }
 
@@ -280,7 +351,7 @@ footer {
      h1 {
          font-size: 34px;
          font-weight: 800;
-         margin-top: -0.35rem;
+         margin-top: 1rem;
 
          @media (min-width: 768px) {
             font-size: 44px;
@@ -348,7 +419,10 @@ footer {
                margin-top: 12rem;
                padding: 20px;
              }
+
+             
         }
+        
 
        
         
@@ -463,6 +537,7 @@ footer {
   .app-features h2 {
     font-size: 28px;
     margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
 
     @media(min-width: 768px) {
         font-size: 34px;
@@ -491,7 +566,7 @@ footer {
     @media (min-width: 1400px) {
         text-align: left;
         line-height: 26px;
-        color: var(--color-lg);
+        color: var(--color-text-body);
         margin-left: -135px;
         width: 746px;
     }
@@ -509,7 +584,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
     gap: 2rem;
     margin: 0 auto;
-    padding: 2rem 0;
+    
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(2, 50%);
@@ -520,13 +595,14 @@ footer {
         
         grid-template-columns: repeat(auto-fit, minmax (350px, 1fr));
         margin-left: -80px;
+        gap: 0;
         
        
        
         
     }
     @media (min-width: 2000px) {
-        gap: 0px;
+        gap: 0;
         margin-left: -1rem;
     }
     
@@ -539,6 +615,7 @@ footer {
     justify-content: flex-start;
     gap: 1rem;
     padding: 1rem;
+    margin-top: 1.5rem;
     
 
     @media (min-width: 1400px) {
@@ -554,7 +631,11 @@ footer {
   .icon {
     margin-top: -2rem;
     margin-left: -2rem;
-    align-items: center;
+    background-color: var(--color-logo-bg);
+    padding: 1rem;
+    border-radius: 8px;
+
+    
 
     @media (min-width: 1400px) {
         margin-left: -4.5rem;
@@ -564,11 +645,7 @@ footer {
     }
   }
   
-  .icon img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-  }
+  
 
   .text {
     text-align: left;
@@ -666,7 +743,7 @@ footer {
     .btn-toggle-switch .label{
         display: block;
         margin-right: 0.75rem;
-        color: var(--color-text-navigation);
+        color: var(--color-gray7);
         font-weight: 600;
     }
     
@@ -676,7 +753,10 @@ footer {
     }
 
     #auth-signin {
-        display:block;
+        display:flex;
+        padding: 8px 24px;
+        gap: 8px;
+      
     }
 
     .btn-mobile {
@@ -685,12 +765,13 @@ footer {
     .navbar {
         display: block;
         
+        
+    }
+    #features {
+        color: var(--color-gray8);
     }
     #phones {
         display: block;
-    }
-    #Features {
-        color: var(--color-gray8);
     }
     #brands {
         display: block;
@@ -759,6 +840,7 @@ footer {
             display: block;
             font-size: 24px;
             text-align: center;
+            margin-top: 3rem;
         }
      }
 }
@@ -858,12 +940,13 @@ footer {
     
 }
 #Receive {
-    margin-right: 6.5rem;
+    margin-right: 10rem;
 }
 .transfer-item p {
     font-size: 16px;
     color:var(--color-text-body);
-    width: 245px;
+    width: 242px;
+    line-height: 160%;
 }
 ul {
     list-style: none;
@@ -879,11 +962,11 @@ ul li {
   }
   #learn-more {
     margin-top: 1rem;
-    margin-right: 240px;
+    margin-right: 210px;
   }
   #learn-more2 {
     margin-top: 3rem;
-    margin-right: 350px;
+    margin-right: 360px;
   }
   #sidearrow {
     margin-left: 0.75rem;
@@ -918,7 +1001,7 @@ ul li {
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
-    background-color: var(--color-white);
+    background-color: var(--color-box);
     width: 416px;
     height: 350px;
     padding: 20px;
@@ -968,6 +1051,7 @@ ul li {
             font-size: 32px;
             margin-top: 3rem;
         }
+       
     }
     p {
         font-size: 18px;
@@ -996,7 +1080,7 @@ ul li {
     
     }
         .faq-item {
-            background-color: var(--color-white);
+            background-color: var(--color-box);
             border: 1px solid var(--color-gray1);
             padding: 12px;
             margin-left: 0.25rem;
@@ -1054,6 +1138,7 @@ ul li {
             @media(min-width: 768px) {
                 display: block;
                 gap: 0;
+                margin-bottom:1rem ;
                 
             }
         }
@@ -1069,6 +1154,7 @@ ul li {
                 border-top: none;
                 margin-top: -1rem;
                 font-size: 14px;
+                margin-bottom: 0.5rem;
                 
             }
            
@@ -1129,12 +1215,12 @@ ul li {
             grid-column: 1;
             grid-row: 1;
             text-align: left;
-            width: 415px;
             margin-top: 1rem;
             margin-bottom: -9rem;
         }
         h2 {
             margin-bottom: 2rem;
+            margin-left: 4rem;
         }
         
      }
@@ -1142,13 +1228,14 @@ ul li {
      #green {
     color: var(--color-green);
 }
-.button {
+#contact-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
     height: 50px;
-    
+    font-size: 14px;
+    line-height: 22px;
 
     @media (min-width: 768px) {
         display: none;
@@ -1218,12 +1305,14 @@ ul li {
     padding: 16px;
     border-radius: 10px;
     margin-top: 3rem;
+    height: 260px;
+    
 }
 
 .subscribe-header {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 40px;
     gap: 15px;
 }
 .subscribe-header h2 {
@@ -1237,6 +1326,8 @@ ul li {
   justify-content: flex-end;
   width: 100%;
   position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .form-input {
@@ -1246,8 +1337,9 @@ ul li {
     border-radius: 8px 0 0 8px;
     outline: none;
     flex-grow: 1;
-    min-width: 200px;
+    min-width: 150px;
     padding-left: 3rem;
+    background-color: var(--color-white);
 }
 .email {
     padding-left: 3rem;
@@ -1328,8 +1420,7 @@ ul li {
             margin-bottom: 3rem;
         }
         .subscribe-header {
-            gap: 32px;
-            margin-left: 2rem;
+            margin-left: 5rem;
         }
         #mobile2 {
             display: none;
@@ -1341,11 +1432,11 @@ ul li {
 
         .subscribe-form {
             width: 45%;
-            margin-right: 4rem;
+            margin-right: 5rem;
         }
         h2{
             font-size: 24px;
-            margin-left: 2rem;
+            margin-left: 0;
         }
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,13 @@
         <header>
             <div class="container">
     
-                <a id="logo" href="index.html"><img src="images/logo.svg" alt="Silicon Logotype"> </a>
+                <a href="/">
+                <img class="show-light" src="images/logo.svg" alt="Silicon Logotype"> 
+                <img class="show-dark" src="images/logo-dark.svg" alt="Silicon Logotype"> 
+            </a>
     
                 <nav id="main-menu" class="navbar">
-                    <a id="Features" href="#">Features</a>
+                    <a id="features" href="#">Features</a>
                 </nav>
                 <div id="darkmode-toggle-switch" class="btn-toggle-switch">
                     <span class="label">Dark mode</span>
@@ -50,8 +53,17 @@
                 <div class="content">
                 <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
                 <div class = "buttons">
-                    <a class="btn-download-app" href ="#"><img src ="images/appstore-light.svg" alt="appstore"> </a>
-                    <a class="btn-download-app" href=""><img src ="images/googleplay-light.svg" alt="google play"> </a>
+                    <a class="btn-download-app" href ="#">
+                    <img class="show-light" src ="images/appstore-light.svg" alt="appstore"> 
+                    <img class="show-dark" src ="images/appstore-dark.svg" alt="appstore"> 
+
+                    </a>
+                    
+                    <a class="btn-download-app" href="#">
+                        <img class="show-light" src ="images/googleplay-light.svg" alt="google play"> 
+                        <img class="show-dark" src ="images/googleplay-dark.svg" alt="google play">
+                    </a>
+                    
                  </div>
                  <a href="#" class="discover-more">
                     <span class="btn-circle">
@@ -223,13 +235,15 @@
                         <img id="quotes" src="images/quotes.svg" alt="quotes">
                         <img id="stars" src="images/rating1.svg" alt="4 star rating">
                         <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
-                        <img id="person" src="images/Fannie.svg" alt="Fannie">
+                        <img class="show-light" id="person" src="images/Fannie.svg" alt="Fannie">
+                        <img class="show-dark" id="person" src="images/Fannie-darkmode.svg" alt="Fannie">
                     </div>
                     <div id="box-2" class="review-box">
                         <img id="quotes" src="images/quotes.svg" alt="quotes">
                         <img id="stars" src="images/rating2.svg" alt="5 star rating">
                         <p>Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
-                        <img id="person" src="images/albert.svg" alt="Albert">
+                        <img class="show-light" id="person" src="images/albert.svg" alt="Albert">
+                        <img class="show-dark" id="person" src="images/albert-darkmode.svg" alt="Albert">
                     </div>
                 </div>
             </div>
@@ -272,7 +286,8 @@
                         <div id="first-question" class="faq-item">
                         <div class="faq-question">
                             <h3>Is any of my personal information stored in the App?</h3>
-                            <img id="more-arrow" src="images/discover-more-down.svg" alt="discover-more-down">
+                            <img class="show-light" id="more-arrow" src="images/discover-more-down.svg" alt="discover-more-down">
+                            <img class="show-dark" id="more-arrow" src="images/discover-more-down-dark.svg" alt="discover-more-down">
 
                           </div>
                         </div>
@@ -280,7 +295,8 @@
                             <div class="faq-question">
                                 <h3>What formats can I download my
                                     transaction history in?</h3>
-                                    <img id="more-arrow" src="images/discover-more-down.svg" alt="discover arrow down">
+                                    <img class="show-light" id="more-arrow" src="images/discover-more-down.svg" alt="discover-more-down">
+                                    <img class="show-dark" id="more-arrow" src="images/discover-more-down-dark.svg" alt="discover-more-down">
                                 </div>
                             </div>
                             <div id="faq-question-tablet" class="faq-item">
@@ -301,28 +317,32 @@
                             <div id="question2" class="faq-item">
                            <div class="faq-question">
                             <h3>Can I schedule future transfers?</h3>
-                            <img id="more-arrow" src="images/discover-more-down.svg" alt="discover arrow down">
+                            <img class="show-light" id="more-arrow" src="images/discover-more-down.svg" alt="discover-more-down">
+                            <img class="show-dark" id="more-arrow" src="images/discover-more-down-dark.svg" alt="discover-more-down">
                            </div>
                         </div>
                         <div class="faq-item">
                             <div class="faq-question">
                             <h3>When can I use Banking App services?</h3>
-                            <img id="more-arrow" src="images/discover-more-down.svg" alt="discover arrow down">
+                            <img class="show-light" id="more-arrow" src="images/discover-more-down.svg" alt="discover-more-down">
+                            <img class="show-dark" id="more-arrow" src="images/discover-more-down-dark.svg" alt="discover-more-down">
                             </div>
                         </div>
                         <div class="faq-item">
                                  <div class="faq-question">
                                 <h3>Can I create my own password that is easy for me to remember?</h3>
-                                <img id="more-arrow" src="images/discover-more-down.svg" alt="discover arrow down">
+                                <img class="show-light" id="more-arrow" src="images/discover-more-down.svg" alt="discover-more-down">
+                                <img class="show-dark" id="more-arrow" src="images/discover-more-down-dark.svg" alt="discover-more-down">
                                  </div>
                         </div>
                         <div id="last-item" class="faq-item">
                                 <div class="faq-question">
                                 <h3>What happens if I forget or lose my password?</h3>
-                                <img id="more-arrow" src="images/discover-more-down.svg" alt="discover arrow down">
+                                <img class="show-light" id="more-arrow" src="images/discover-more-down.svg" alt="discover-more-down">
+                                <img class="show-dark" id="more-arrow" src="images/discover-more-down-dark.svg" alt="discover-more-down">
                             </div>
                         </div>
-                      <div class="button">
+                      <div class="button" id="contact-btn">
                         <a href="#" class="btn-primary">Contact us now</a>
                       </div>
 
@@ -375,6 +395,6 @@
         </footer>
     </div>
    
-    
+    <script src="darkmode.js"></script>
 </body>
 </html>
