@@ -1,0 +1,77 @@
+.transfer-money {
+  display: none;
+
+  @include desktop {
+      display: block;
+  }
+}
+.transfer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+  padding-top: 7rem;
+}
+.transfer-item {
+  display: flex;
+  align-items: center;
+  justify-items: left;
+  flex-direction: column;
+  margin-top: 2rem;
+  
+}
+#send, #contacts {
+  margin-right: -2rem;
+  margin-top: -3.5rem;
+}
+.transfer-item h2 {
+  font-size: 32px;
+  font-weight: 800;
+  
+}
+#Receive {
+  margin-right: 10rem;
+}
+.transfer-item p {
+  font-size: 16px;
+  color: $color-text-body;
+  width: 242px;
+  line-height: 160%;
+}
+ul {
+  list-style: none;
+  place-content: left;
+  margin-right: 6rem;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: $color-text-body;
+  gap: 0.5rem;
+}
+#learn-more {
+  margin-top: 1rem;
+  margin-right: 210px;
+}
+#learn-more2 {
+  margin-top: 3rem;
+  margin-right: 360px;
+}
+#sidearrow {
+  margin-left: 0.75rem;
+}
+.grid-icons {
+  display: flex;
+  gap: 20px;
+
+
+}
+.grid-icons p{
+  margin-top: 1rem;
+}
+.icons img {
+  background-color: $color-logo-bg;
+  padding: 1rem;
+  border-radius: 8px;
+}

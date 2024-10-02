@@ -1,0 +1,58 @@
+.reviews {
+    display: none;
+
+    @include desktop {
+        display: block;
+        background-color: $color-bg-100;
+        padding: 80px;
+    }
+}
+.reviews h2 {
+    font-size: 40px;
+    font-weight: 800px;
+}
+.review-grid {
+    display: flex;
+    gap: 24px;
+   
+}
+.review-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: $color-box;
+    width: 416px;
+    height: 350px;
+    padding: 20px;
+    gap: 2px;
+    margin-left: 3rem;
+}
+#box-1 {
+    margin-left: 6rem;
+}
+#box-2 {
+    margin-left: 0;
+}
+#quotes {
+    margin-top: -3rem;
+    margin-right: 310px;
+}
+#stars {
+    margin-right: 280px;
+    margin-top: 1rem;
+}
+.review-box p {
+    color: $color-text-body;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 1rem;
+    margin-bottom: -0.5rem;
+    width: 368px;
+    height: 145px;
+}
+#person {
+    margin-top: 2.5rem;
+    margin-right: 7rem;
+}

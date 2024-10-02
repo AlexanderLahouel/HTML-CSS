@@ -1,0 +1,133 @@
+.how-it-works {
+    background-color: $color-bg-100;
+   
+}
+.how-it-works h2 {
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+
+    @include tablet {
+        font-size: 33.5px;
+        line-height: 43.6px;
+    }
+    @include desktop {
+        font-size: 40px;
+        line-height: 130%;
+    }
+}
+.h3-variants {
+    
+    #mobile {
+        font-size: 21.6px;
+        line-height: 30.2px;
+        font-weight: 800;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    #tablet {
+        display: none;
+    }
+    #desktop {
+        display: none;
+    }
+
+    @include tablet {
+        #mobile {
+            display: none;
+        }
+        #tablet {
+            display: block;
+            font-size: 22.7px;
+            font-weight: 800;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    }
+    @include desktop {
+        #tablet {
+            display: none;
+        }
+        #desktop {
+            display: block;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 3rem;
+            font-weight: 800;
+        }
+     }
+}
+
+.how-it-works p {
+    color: $color-text-body;
+    font-size: 16px;
+    padding-bottom: 4rem;
+    line-height: 25.6px;
+    display: flex;
+    align-items: center;
+    text-align: center;   /* Valde att inte göra något med texten i tablet mode eftersom jag tyckte det såg bättre ut att ett ord inte låg på en egen rad.*/
+
+    @include tablet {
+        width: 500px;
+        margin-left: 7rem;
+      
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.how-it-works #p2 {
+    display: none;
+
+    @include desktop {
+        width: auto;
+        margin-left: 0;
+        display: block;
+        padding-bottom: 5rem;
+    }
+}
+
+.how-grid {
+    display: grid;
+    grid-template-columns: auto, 1fr;
+}
+
+.image-wrapper {
+   margin-top: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#img-1, #img-3, #img-4, #img-5, #img-6 {
+    display:none;
+}
+
+@include tablet {
+    #img-1, #img-3 {
+        display: block
+    } 
+    #img-2 {
+        width: 203px;
+        height: 411px;
+    }
+    @include desktop {
+        #img-1, #img-2, #img-3 {
+            display: none;
+        }
+        #img-4, #img-5, #img-6 {
+            display: flex;
+        
+        }
+        #img-4 {
+            margin-right: 5rem;
+        }
+        #img-6 {
+            margin-left: 6rem;
+        }
+    }
+}

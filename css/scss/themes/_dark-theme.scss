@@ -1,0 +1,138 @@
+.dark {
+    color-scheme: dark;
+    body {
+        background-color: $color-bg-dark;
+        color: $color-text-body-dark;
+    }
+    
+    .btn-circle {
+        border: none;
+        background-color: $color-bg-100-dark;
+    }
+    .brand-box {
+        background-color: $color-brandbox-dark;
+      border: 1px solid $color-brand-border-dark;
+      @include desktop {
+        background-color: $color-bg-dark;
+      }
+    }
+   
+    #hero p {
+        color: $color-white;
+
+        @include tablet {
+            color: $color-gray7;
+        }
+        @include desktop {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+   
+    #faq-question-tablet {
+        border: 1px solid rgba(255, 255, 255, 0.15)
+    }
+    .contact-card{
+        border:1px solid $color-gray3;
+
+
+        &:h5 {
+            color: $color-text-body-dark;
+        }
+        @include desktop {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+    }
+    .form-input {
+        border: 1px solid $color-gray8;
+    }
+    #faq-question-mobile {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    #features {
+        color: $color-white;
+    }
+    .discover-more span {
+        color: rgba(255, 255, 255, 0.7);
+    }
+   
+     .faq-answer {
+        border-top: 1px solid $color-gray8;
+    }
+    .form-input {
+        color: $color-gray5;
+    
+        @media (min-width:1400px) {
+            background-color: $color-box-dark;
+            color: $color-gray6;
+        }
+    }
+    .btn-download-app {
+        background-color: $color-market-btn-dark;
+        .show-light {display: none;}
+        
+        .show-dark {display: block;}
+    }
+    .show-dark {
+        display: none;
+    }
+    .show-light {
+        display: block;
+    }
+    h1, h2, h3, h4 {
+        color: $color-text-heading-dark;
+    }
+    .app-features p {
+        color: rgba(255, 255, 255, 0.7);
+        
+        @include desktop {
+            color: $color-lg-dark;
+        }
+    }
+    .text p {
+        color: $color-text-body-dark;
+    }
+    .icon {
+      background-color: $color-logo-bg-dark;
+    }
+  .how-it-works {
+    background-color: $color-bg-100-dark;
+  }
+  .icons img {
+    background-color: $color-logo-bg-dark;
+  }
+  .reviews {
+    background-color: $color-bg-100-dark;
+  }
+  .review-box {
+    background-color: $color-box-dark;
+  }
+  .review-box p {
+    color: $color-text-body-dark;
+  }
+  .subscribe-container {
+    background-color: $color-bg-100-dark;
+  }
+  .faq-answer {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .faq-item {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: $color-brandbox-dark;
+    @include tablet {
+        border: none;
+        background-color: $color-box-dark;
+    }
+  }
+  .faq-header p {
+    color: $color-lg-dark;
+  }
+  .how-it-works #p2 {
+    color: rgba(255, 255, 255, 0.7); 
+  }
+  ul li {
+    color: rgba(255, 255, 255, 0.7); 
+  }
+  .transfer-item p {
+    color: rgba(255, 255, 255, 0.7); 
+  }
+}

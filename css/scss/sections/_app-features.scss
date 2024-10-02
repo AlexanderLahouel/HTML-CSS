@@ -1,0 +1,214 @@
+
+
+.app-features {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 4rem;
+   
+
+    @include desktop {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, auto);
+        place-items: center;
+        
+        .image-container {
+            margin-left: -210px;
+            margin-top: 96px;
+        }
+        
+        
+       
+    }
+    @media (min-width: 2000px) {
+        
+        align-items: center;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(3, auto);
+        gap: -2rem;
+        place-items: center;
+        
+        .image-container {
+            margin-right: -320px;
+            margin-top: 140px;
+        }
+        
+        
+       
+    }
+  }
+  
+  .app-features h2 {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+
+    @include tablet {
+        font-size: 34px;
+        
+    }
+
+    @include desktop {
+        font-size: 40px;
+        text-align: left;
+        margin-left: -135px;
+        margin-top: 96px;
+    }
+    @media (min-width: 2000px) {
+        margin-left: -2rem;
+    }
+  }
+  
+  .app-features p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px; 
+    color: $color-text-body;
+
+  
+
+
+
+    @include desktop {
+        text-align: left;
+        line-height: 26px;
+        color: $color-lg;
+        margin-left: -135px;
+        width: 746px;
+    }
+    @media (min-width: 2000px) {
+        margin-left: -2rem;
+    }
+  }
+
+ 
+  
+
+  .features-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    
+
+    @include tablet {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    @include desktop {
+        
+        grid-template-columns: repeat(auto-fit, minmax (350px, 1fr));
+        margin-left: -80px;
+        gap: 0;
+        
+       
+       
+        
+    }
+    @media (min-width: 2000px) {
+        gap: 0;
+        margin-left: -1rem;
+    }
+    
+
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    
+
+    @include desktop {
+        width: 345px;
+        gap: 1.5rem;
+        
+
+    }
+    
+   
+    
+  }
+
+  .icon {
+    margin-top: -2rem;
+    margin-left: -2rem;
+    background-color: $color-logo-bg;
+    padding: 1rem;
+    border-radius: 8px;
+   
+
+    
+
+    @include desktop {
+        margin-left: -4.5rem;
+    }
+    @media (min-width: 2000px) {
+        margin-left: -2.5rem;
+    }
+  }
+  
+  
+
+  .text {
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+    
+  }
+  
+  
+  .text h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 0.5rem;
+    
+  }
+  
+  .text p {
+    color: $color-text-body;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 0.5rem;
+    width: 278px;
+
+    @media (max-width: 370px) {
+        max-width: 220px;
+    }
+
+    @include tablet {
+        width: 245px;
+        height: 77px;
+    }
+    
+    
+    @include desktop {
+        margin-left: -0;
+        width: 240px;
+        
+    }
+    @media (min-width: 2000px) {
+        
+    }
+  }
+
+  
+.image-container {
+    display: none;
+
+    @include desktop {
+      display:grid;
+      float:left;
+      
+    }
+}

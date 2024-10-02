@@ -1,0 +1,144 @@
+#subscribe 
+    
+.subscribe-container {
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    height: 260px;
+    margin-bottom: 3rem;
+    
+}
+
+.subscribe-header {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 15px;
+}
+.subscribe-header h2 {
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 30px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  
+}
+
+.form-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid $color-gray3;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    flex-grow: 1;
+    min-width: 150px;
+    padding-left: 3rem;
+    background-color: $color-white;
+}
+.email {
+    padding-left: 3rem;
+    background-image: url('../images/email.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+}
+
+
+.subscribe-input::placeholder {
+    color: $color-lg;
+}
+#subscribe-button {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 11px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+
+#desktop2 {
+    display: none;
+
+    @include desktop {
+        #mobile2 {
+            display: none;
+        }
+        #desktop2 {
+            display: block;
+        }
+    }
+}
+@include tablet {
+    
+    .subscribe-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+    }
+    .subscribe-header {
+        margin-bottom: 0;
+        gap: 32px;
+        margin-left: 1rem;
+    }
+    .subscribe-header h2 {
+        width: 200px;
+        font-size: 23px;
+        line-height: 32px;
+    }
+   .subscribe-form {
+    justify-content: flex-end;
+    width: 212px;
+    margin-right: 1rem;
+    
+   }
+   
+    .subscribe-input {
+        flex-grow: 1;
+        width: 212px;
+    }
+    .subscribe-button {
+        width: 115px;
+    }
+    
+    #mobile2 {
+        display: block;
+        
+    }
+
+    @include desktop {
+       
+        .subscribe-container {
+            height: 222px;
+            margin-bottom: 3rem;
+        }
+        .subscribe-header {
+            margin-left: 5rem;
+        }
+        #mobile2 {
+            display: none;
+        }
+        #desktop2 {
+            display: block;
+            width: 414px;
+        }
+
+        .subscribe-form {
+            width: 45%;
+            margin-right: 5rem;
+        }
+        h2{
+            font-size: 24px;
+            margin-left: 0;
+        }
+    }
+}
